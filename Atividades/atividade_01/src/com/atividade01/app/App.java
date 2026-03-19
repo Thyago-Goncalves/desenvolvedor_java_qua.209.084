@@ -23,6 +23,7 @@ public class App {
         double peso;
         double altura;
         double imc;
+
      // Recebendo dados do usuário
 
     System.out.println("Informe o seu nome: ");
@@ -34,7 +35,11 @@ public class App {
     
     // Declarando IMC 
 
-    imc = (peso/(altura*altura));
+    imc = peso/(altura*altura);
+
+    // mostra o imc para o usuário
+
+    System.out.println(nome + " seu IMC é " + String.format("%.2f", imc) + ".");
 
     // Recebendo resultados do imc do usuário
 if (imc < 18.5) {
@@ -56,7 +61,23 @@ else {
     System.out.println(nome + " você está com obesidade mórbida.");
 }
 
+// Opção com Ternario
+// Inserir variavel result como double, e em seguida colocar os seguintes comandos
+
+// result = (imc < 18.5) ? " está abaixo do peso." :
+// (imc < 25) ? " está no peso ideal." :
+// (imc < 30) ? " estpa acima do peso." :
+// (imc < 35) ? " está obeso" :
+// (imc < 40) ? " está com obesidade nivel II" :
+// " está com obesidade mórbida
+
+// Depois faz a saida de dados
+
+// System.out.println(nome + result);
+
+
 sc.close();
 
     }
 }
+
