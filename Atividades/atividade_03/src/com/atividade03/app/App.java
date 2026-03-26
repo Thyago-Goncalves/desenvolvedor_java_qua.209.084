@@ -1,79 +1,60 @@
 package com.atividade03.app;
+
 import java.util.Scanner;
+
 public class App {
     public static void main(String[] args) throws Exception {
-        // TODO
-        // Recrie o programa da calculadora feito no dia 18/03/2026 (switch-case), mas
-        // desta vez acrescentando a opção de encerrar o programa quando o 
-        // usuario quiser.
-
         Scanner sc = new Scanner(System.in);
 
-        // Declaração de variáveis
-
-        double num1;
-        double num2;
-        double result;
         String operador;
-        String opcao;
+        double x;
+        double y;
+        double result = 0;
 
-        // Entrada de dados
+        do {
+            System.out.println("Escolha a opção:");
+            System.out.println("1 - Somar");
+            System.out.println("2 - Subtrair");
+            System.out.println("3 - Multiplicar");
+            System.out.println("4 - Dividir");
+            System.out.println("5 - Sair");
+            operador = sc.nextLine();
 
-        do{
-        System.out.println("Informe o 1° número: ");
-        num1 = sc.nextDouble();
-        System.out.println("Informe o 2° número: ");
-        num2 = sc.nextDouble();
+            if (!"5".equals(operador)) {
+                System.out.println("Informe o valor do 1º número:");
+                x = sc.nextDouble();
+                System.out.println("Informe o valor do 2º número: ");
+                y = sc.nextDouble();
 
-        // Limpeza de buffer
+                sc.nextLine();
 
-        sc.nextLine();
+                switch (operador) {
+                    case "1":
+                        result = x+y;
+                        System.out.println("O valor da soma é " + result);
+                        break;
+                    case "2":
+                        result = x-y;
+                        System.out.println("O valor da subtração é " + result);
+                        break;
+                    case "3":
+                        result = x*y;
+                        System.out.println("O valor da multiplicação é " + result);
+                        break;
+                    case "4":
+                        result = x/y;
+                        System.out.println("O valor da divisão é " + result);
+                        break;
+                    default:
+                        System.out.println("Operador inválido!");
+                        break;
+                }
+            }
+            else {
+                System.out.println("Programa encerrado!");
+            }
 
-        // menu
-
-        System.out.println("Informe a operação desejada:");
-        System.out.println("1 - Soma");
-        System.out.println("2 - Subtração");
-        System.out.println("3 - Multiplicação");
-        System.out.println("4 - Divisão");
-        operador = sc.nextLine();
-
-        switch (operador) {
-            case "1":
-                result = num1+num2;
-                System.out.println("O valor da soma é " + result);
-                break;
-            case "2":
-                result = num1-num2;
-                System.out.println("O valor da subtração é " + result);
-                break;
-            case "3":
-                result = num1*num2;
-                System.out.println("O valor da multiplicação é: " + result);
-                break;
-            case "4":
-                result = num1/num2;
-                System.out.println("O valor da divisão é " + result);
-                break;
-            default:
-                System.out.println("Operação Inválida.");
-        
-        }    
-        System.out.println("Deseja encerrar o programa?");
-        System.out.println("1 - Sim");
-        System.out.println("2 - Continuar no programa");
-        opcao = sc.nextLine();
-
-        if (opcao == "1") {
-            
-        }
-        else {}
-       } while (opcao != 2);
-        
-       }
-          sc.close();
-
-        
+        } while(!"5".equals(operador));
 
     }
 }
