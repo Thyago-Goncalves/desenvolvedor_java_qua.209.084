@@ -55,6 +55,6 @@ public class App {
             }
 
         } while(!"5".equals(operador));
-
+        sc.close();
     }
 }
