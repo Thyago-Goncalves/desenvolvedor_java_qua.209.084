@@ -10,7 +10,7 @@ public class Professor {
     }
 
     public double areaDoTriangulo(double xTriangulo, double yTriangulo) {
-        return xTriangulo*yTriangulo/2;
+        return (xTriangulo*yTriangulo)/2;
     }
 
     public double areaDoCirculo(double rCirculo, double pi) {

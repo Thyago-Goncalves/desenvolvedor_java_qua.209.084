@@ -72,6 +72,7 @@ public class App {
                 }
 
             default:
+                System.out.println("Operação Inválida.");
         }
         sc.close();
     }
