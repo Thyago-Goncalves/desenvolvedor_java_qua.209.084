@@ -5,9 +5,9 @@ import com.atividade05.models.*;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        // TODO: ATIVIDADE 05
+        // : ATIVIDADE 05
         // Utilizando os conceitos básicos de orientação a objetos, crie um programa que um aluno informa seus dados (nome, idade e email) e pede para um professor (dados: nome e matricula) calcular para ele as seguintes fórmulas: área do triângulo, área do círculo e equação do 1° grau. e exibe o resultado na tela.
-        // NOTE: Crie as classes Aluno e professor no package models.
+        //Crie as classes Aluno e professor no package models.
 
         
         String operador;
