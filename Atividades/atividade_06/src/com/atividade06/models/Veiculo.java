@@ -9,15 +9,17 @@ abstract public class Veiculo {
     private String cor;
     private String ano;
     private String placa;
+    private String categoria;
 
     // Construtor
 
-    public Veiculo(String fabricante, String modelo, String cor, String ano, String placa) {
+    public Veiculo(String fabricante, String modelo, String cor, String ano, String placa, String categoria) {
         this.fabricante = fabricante;
         this.modelo = modelo;
         this.cor = cor;
         this.ano = ano;
         this.placa = placa;
+        this.categoria = categoria;
     }
 
     // Metodos de acesso (Getters e Setters)
