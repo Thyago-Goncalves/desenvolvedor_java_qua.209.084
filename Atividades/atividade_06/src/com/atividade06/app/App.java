@@ -33,39 +33,41 @@ public class App {
         switch (tipoVeiculo) {
             case "A":
                 Moto moto = new Moto(null, null, null, null, null, null, "A");
+                System.out.println("Informe o fabricante:");
+                moto.setFabricante(sc.nextLine());
+                System.out.println("Informe o modelo:");
+                moto.setModelo(sc.nextLine());
+                System.out.println("Informe a cor:");
+                moto.setCor(sc.nextLine());
+                System.out.println("Informe a placa:");
+                moto.setPlaca(sc.nextLine());
+                System.out.println("Informe o ano:");
+                moto.setAno(sc.nextLine());
+                System.out.println("Informe as cilindradas:");
+                moto.setCilindradas(sc.nextLine());
 
+                System.out.println("Fabricante: " + moto.getFabricante());
+                System.out.println("Modelo: " + moto.getModelo());
+                System.out.println("Cor: " + moto.getCor());
+                System.out.println("Placa: " + moto.getPlaca());
+                System.out.println("Ano: " + moto.getAno());
+                System.out.println("Cilindradas: " + moto.getCilindradas());
+                System.out.println("Categoria: " + moto.getCategoria());
                 break;
             case "B":
-                System.out.println("Carro tem bagageiro?");
-                System.out.println("1 - Sim");
-                System.out.println("2 - Não");
-                resposta = sc.nextLine();
-                if (resposta == "1") {
-                    carro.setBagageiro(sc.nextBoolean());
-                } else 
-                    System.out.println("\nInforme os dados do veículo\n");
-                break;
-            case "C":
-                System.out.println("Caminhão com carroceria?");
-                System.out.println("1 - Sim");
-                System.out.println("2 - Não");
-                resposta = sc.nextLine();
-                if (resposta == "1") {
-                    caminhao.setCarroceria(sc.nextLine());
-                } else {
-                    System.out.println("\nInforme os dados do veículo\n");
-                }
-                break;
-            case "D":
-                System.out.println("Ônibus tem leito ou não?");
-                System.out.println("1 - Sim");
-                System.out.println("2 - Não");
-                resposta = sc.nextLine();
-                if (resposta == "1") {
-                    onibus.setLeito(sc.nextLine());
-                } else {
-                    System.out.println("\nInforme os dados do veículo\n");
-                }
+                Carro carro = new Carro(null, null, null, null, null, null, "B");
+                System.out.println("Informe o fabricante:");
+                moto.setFabricante(sc.nextLine());
+                System.out.println("Informe o modelo:");
+                moto.setModelo(sc.nextLine());
+                System.out.println("Informe a cor:");
+                moto.setCor(sc.nextLine());
+                System.out.println("Informe a placa:");
+                moto.setPlaca(sc.nextLine());
+                System.out.println("Informe o ano:");
+                moto.setAno(sc.nextLine());
+                System.out.println("Informe as cilindradas:");
+                moto.setCilindradas(sc.nextLine());
         }
         // Entrada de dados (Sobre o veículo)
 

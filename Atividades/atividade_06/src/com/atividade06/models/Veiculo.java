@@ -24,39 +24,53 @@ abstract public class Veiculo {
 
     // Metodos de acesso (Getters e Setters)
 
-    public String getFabricante(){
+
+    public String getFabricante() {
         return this.fabricante;
     }
-    
-    public void setFabricante() {
+
+    public void setFabricante(String fabricante) {
         this.fabricante = fabricante;
     }
-    public String getModelo(){
+
+    public String getModelo() {
         return this.modelo;
     }
-    
-    public void setModelo() {
+
+    public void setModelo(String modelo) {
         this.modelo = modelo;
     }
-    public String getCor(){
+
+    public String getCor() {
         return this.cor;
     }
-    
-    public void setCor() {
+
+    public void setCor(String cor) {
         this.cor = cor;
     }
-    public String getAno(){
+
+    public String getAno() {
         return this.ano;
     }
-    
-    public void setAno() {
+
+    public void setAno(String ano) {
         this.ano = ano;
     }
-    public String getPlaca(){
+
+    public String getPlaca() {
         return this.placa;
     }
-    
-    public void setPlaca() {
+
+    public void setPlaca(String placa) {
         this.placa = placa;
     }
+
+    public String getCategoria() {
+        return this.categoria;
+    }
+
+    public void setCategoria(String categoria) {
+        this.categoria = categoria;
+    }
+
 }

@@ -6,8 +6,9 @@ final public class Moto extends Veiculo {
 
     public Moto (String fabricante, String modelo,String cor, String ano, String placa, String cilindradas,String categoria) {
         super (fabricante, modelo, cor, ano, placa, categoria);
+        this.cilindradas = cilindradas;
     }   
-    
+
 
     public String getCilindradas() {
         return this.cilindradas;
@@ -16,5 +17,5 @@ final public class Moto extends Veiculo {
     public void setCilindradas(String cilindradas) {
         this.cilindradas = cilindradas;
     }
-    
+
 }
